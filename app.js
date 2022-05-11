@@ -2,7 +2,8 @@ const input = document.querySelector('.qr-text');
 const qrImg = document.querySelector('.qr-img');
 const downloadBtn = document.querySelector('.download-btn');
 
-let userText, link;
+let userText = 'Hello, World !';
+let link;
 
 function handleQR() {
     userText = this.value;
