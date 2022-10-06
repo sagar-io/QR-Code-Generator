@@ -6,7 +6,10 @@ let userText = 'Hello, World !';
 let link;
 
 function handleQR() {
-    userText = this.value;
+    if(this.value) {
+        userText = (this.value);
+    }
+    
     link =  `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${userText}` ;
     qrImg.src = link;
 }
